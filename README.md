@@ -1,8 +1,8 @@
 # 安装与运行
 <pre><code>
-git clone 
+git clone https://github.com/harpheart/blog.git
 
-cd 
+cd blog
 
 npm install //安装依赖
 
