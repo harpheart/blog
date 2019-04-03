@@ -1,5 +1,4 @@
-# blog
-
+# 安装与运行
 <pre><code>
 git clone 
 
@@ -37,5 +36,5 @@ node index.js
 + **Mongodb**：简单易操作的数据库存储用户的信息
 + **ejs**：嵌入式 JavaScript 模板引擎
 # 实现页面
-# 安装与运行
+
 
