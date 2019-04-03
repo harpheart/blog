@@ -24,7 +24,7 @@
 + **Html5及Css3**
 
 【后端】
-+ **nodejs：**利用 Express 起一个本地测试服务器
++ **nodejs:**利用 Express 起一个本地测试服务器
 + **Mongodb：**简单易操作的数据库存储用户的信息
 + **ejs：**嵌入式 JavaScript 模板引擎
 # 实现页面
