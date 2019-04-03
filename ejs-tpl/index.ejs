@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        .a {
+        color: black;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+         }
+        
+        
+        .h1 {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="h1">harpheart的个人博客
+                <small>心若冰心,波澜不惊</small>
+                <a href="/admin" class="a"><button type="button" class="btn btn-success">后台管理系统</button></a>
+            </h1>
+            <ul class="list-group">
+                <% data.forEach(function(e){ %>
+                    <li class="list-group-item">
+                        <a href="/p?_id=<%= e._id %>">
+                            <h3>
+                                <%= e.title %>
+                            </h3>
+                        </a>
+                        <p>日期 : 
+                                <%= e.date%>
+                        </p>
+                        <p>作者: 
+                                <%= e.author%>
+                        </p>
+                        <p>
+                            <%= e.intro%>
+                        </p>
+                    </li>
+                <% }) %>
+                
+              </ul>
+        </div>
+    </div>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script>
+    var PostIp = function(){
+        $.ajax({
+            type : 'get',
+            url : '/getIp',
+            data : {
+                Ip  : returnCitySN["cip"]
+            },
+            success : function(e){
+                console.log(e)
+            }
+        })
+    }
+    PostIp()
+    </script>
+</body>
+</html>
