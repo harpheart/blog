@@ -1,5 +1,14 @@
 # blog
-前端使用html5+css3+bootstrap 后端使用nodejs的Express+Mongodb框架并使用ejs模板对前端也面渲染
+
+<pre><code>
+git clone 
+
+cd 
+
+npm install //安装依赖
+
+node index.js
+</pre></code>
 
 # 效果图
 
@@ -29,12 +38,4 @@
 + **ejs**：嵌入式 JavaScript 模板引擎
 # 实现页面
 # 安装与运行
-<pre><code>
-git clone 
 
-cd 
-
-npm install //安装依赖
-
-node index.js
-</pre></code>
