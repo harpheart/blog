@@ -4,6 +4,6 @@
 ##效果图
 
 ###主页
-
+![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
 
 
